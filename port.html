@@ -1,0 +1,173 @@
+<!-- full updated content including all previous sections -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Mark Kenneth Gepulle – IT Programmer and Software Engineer specializing in automation and web development." />
+  <meta name="keywords" content="IT Programmer, Software Engineer, Automation, Python, Shell, Portfolio, Resume" />
+  <meta name="author" content="Mark Kenneth Gepulle" />
+  <title>Mark Kenneth | IT Programmer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    }
+    .main-content {
+      padding: 2rem;
+      flex: 1;
+      transition: opacity 0.5s ease-in-out;
+    }
+    nav a {
+      color: #e5e7eb;
+      padding: 0.75rem 1rem;
+      display: block;
+      transition: background 0.3s, transform 0.3s;
+    }
+    nav a:hover {
+      background-color: #374151;
+      transform: scale(1.05);
+    }
+    .tab-content {
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .tab-content.active {
+      display: block;
+      opacity: 1;
+    }
+  </style>
+  <script>
+    function showTab(tabId) {
+      document.querySelectorAll('.tab-content').forEach(tab => {
+        tab.classList.remove('active');
+        tab.style.opacity = 0;
+      });
+      const selectedTab = document.getElementById(tabId);
+      selectedTab.classList.add('active');
+      setTimeout(() => selectedTab.style.opacity = 1, 10);
+    }
+    window.onload = () => showTab('about');
+  </script>
+</head>
+<body class="text-white font-sans">
+  <div class="flex min-h-screen flex-col">
+    <div class="bg-gray-900 flex flex-wrap justify-between items-center px-6 py-4">
+      <h1 class="text-3xl font-bold text-white">Portfolio</h1>
+      <nav class="flex flex-wrap justify-end space-x-4">
+        <a href="#" onclick="showTab('about')">About</a>
+        <a href="#" onclick="showTab('skills')">Skills</a>
+        <a href="#" onclick="showTab('projects')">Projects</a>
+        <a href="#" onclick="showTab('experience')">Experience</a>
+        <a href="resume.pdf" download class="text-green-400 hover:underline">Download Resume</a>
+      </nav>
+    </div>
+
+    <section class="text-center py-4 bg-gray-700">
+      <h2 class="text-2xl font-bold">Mark Kenneth Gepulle</h2>
+      <p class="text-gray-300">IT Programmer | Software Engineer</p>
+    </section>
+
+    <section id="about" class="main-content tab-content">
+  <h2 class="text-2xl font-semibold mb-4">About Me</h2>
+  <p class="mb-4">I am an IT graduate with a solid foundation in web development and programming. I possess practical experience in various programming languages, including Java, C++, C#, and PHP. In addition to my development skills, I am proficient in UNIX environments and have experience with shell scripting, Perl, and Python. My diverse technical skill set enables me to adapt quickly to new challenges and contribute effectively to both individual and team-based projects.</p>
+  <p class="mb-4">I'm passionate about continuous learning and always eager to expand my expertise in the ever-evolving field of technology. I enjoy tackling real-world problems through automation, optimizing workflow efficiency, and delivering clean, maintainable code.</p>
+  <p class="mb-4">Currently, I am working as a Software Engineer at Straive where I develop automation scripts, support business systems, and contribute to the success of cross-functional projects. I also spend time maintaining personal projects on GitHub and expanding my skills in cloud technologies, containerization, and frontend frameworks.</p>
+  <p>Whether it's contributing to a team goal or developing a product from the ground up, I bring dedication, attention to detail, and a growth mindset to every opportunity.</p>
+</section>
+
+<section id="skills" class="main-content tab-content">
+  <h2 class="text-2xl font-semibold mb-4">Skills</h2>
+  <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-gray-200">
+    <div class="flex items-center space-x-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="w-6 h-6" />
+      <span>Python Automation</span>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="w-6 h-6" />
+      <span>Linux/Unix Systems</span>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Shell Scripting" class="w-6 h-6" />
+      <span>Shell Scripting</span>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg" alt="Perl" class="w-6 h-6" />
+      <span>Perl</span>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="w-6 h-6" />
+      <span>PHP</span>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="w-6 h-6" />
+      <span>Git & GitHub</span>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-6 h-6" />
+      <span>JavaScript</span>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" class="w-6 h-6" />
+      <span>Java</span>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" class="w-6 h-6" />
+      <span>C++</span>
+    </div>
+    <div class="flex items-center space-x-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" class="w-6 h-6" />
+      <span>C#</span>
+    </div>
+  </div>
+</section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="main-content tab-content">
+      <h2 class="text-2xl font-semibold mb-4">Projects</h2>
+      <div class="space-y-4">
+        <div>
+          <h3 class="text-xl font-bold">Automation Script Suite</h3>
+          <p>Developed scripts in Perl and Shell to automate data processing for Straive's content workflows, saving 30% of manual effort.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Company Website - GenCool Mechanical</h3>
+          <p>Built a promotional website to showcase their products/services and support marketing. Note: The current live site <a href="https://gencoolhvac.com" class="text-blue-400 hover:underline" target="_blank">gencoolhvac.com</a> is different from the version I initially created during my internship.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">GitHub Projects</h3>
+          <p>Explore my open-source contributions and sample automation scripts on my GitHub profile: <a href="https://github.com/Kreth27" class="text-blue-400 hover:underline" target="_blank">github.com/Kreth27</a></p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Personal Portfolio Website</h3>
+          <p>Designed and developed this personal portfolio website using HTML, Tailwind CSS, and JavaScript with a focus on responsiveness, SEO, and modern UI/UX practices.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="main-content tab-content">
+      <h2 class="text-2xl font-semibold mb-4">Experience</h2>
+      <div>
+        <h3 class="text-xl font-bold">Software Engineer – Straive</h3>
+        <p class="text-gray-400">Oct 2023 – Present</p>
+        <p>My first job after graduating was as a Software Engineer at Straive, where I focused on process automation, shell scripting, and programming in Perl and Python. I also became proficient in the Linux environment and was recognized as a top performer for October, November, and December 2024.</p>
+        <p class="text-green-300 font-semibold mt-2">🏆 Awarded Top Performer for October, November, and December 2024</p>
+        <div class="mt-4">
+          <h4 class="text-lg font-semibold">Certificate of Recognition</h4>
+          <img src="certificate-top-performer.png" alt="Top Performer Certificate" class="mt-2 rounded shadow-lg w-full max-w-md" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center text-gray-300 py-6 text-sm bg-gray-900">
+      <h2 class="text-xl font-semibold mb-2">Contact Me</h2>
+      <p>Email: <a href="mailto:gepullemarkkenneth@gmail.com" class="text-blue-400">gepullemarkkenneth@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mark-kenneth-gepulle-333348272" class="text-blue-400" target="_blank">linkedin.com/in/mark-kenneth-gepulle-333348272</a></p>
+      <p>GitHub: <a href="https://github.com/Kreth27" class="text-blue-400" target="_blank">github.com/Kreth27</a></p>
+      <p class="mt-4 text-gray-500">&copy; 2025 Mark Kenneth Gepulle. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
